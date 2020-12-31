@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightgray</item>
+        <item name="colorPrimaryDark">@color/lightGreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/lightGreen</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <color name="Transparent">#00000000</color>
+
+</resources>

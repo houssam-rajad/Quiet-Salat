@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="640" viewBox="0 0 360 640">
+  <defs>
+    <filter id="path" x="292.281" y="527.937" width="48.037" height="56.127" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#30c977"/>
+      <stop offset="0.281" stop-color="#36c788"/>
+      <stop offset="0.756" stop-color="#47c4b4"/>
+      <stop offset="1" stop-color="#49c4b7"/>
+    </linearGradient>
+    <clipPath id="clip-am">
+      <rect width="360" height="640"/>
+    </clipPath>
+  </defs>
+  <g id="am" clip-path="url(#clip-am)">
+    <rect width="360" height="640" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#path)">
+      <path id="path-2" data-name="path" stroke="rgba(0,0,0,0)" d="M8.6,9.658,13.027,6,32,21.678,13.027,37.356,8.6,33.7l14.546-12.02Z" fill="#aaa" transform="translate(296 526.32)" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+    <g id="background" transform="translate(31 -393.709)">
+      <image id="Rectangle_23" data-name="Rectangle 23" width="444.591" height="666.82" transform="translate(-46 367)" xlink:href="../../Pictures/beige-dome-building-2079666.jpg"/>
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="362.54" height="667.048" transform="translate(-31.008 367.161)" opacity="0.66" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

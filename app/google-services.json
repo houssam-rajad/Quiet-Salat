@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "22928835520",
+    "firebase_url": "https://quiet-salat.firebaseio.com",
+    "project_id": "quiet-salat",
+    "storage_bucket": "quiet-salat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22928835520:android:c3ee7b1d6e9228864abe25",
+        "android_client_info": {
+          "package_name": "com.quiet.salat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22928835520-6d23ch5abkf51h31pjhupp1ek2rritb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNI1PTAcxtl5VisBunEcMApMlnSckKaoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22928835520-6d23ch5abkf51h31pjhupp1ek2rritb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444.591" height="667.209" viewBox="0 0 444.591 667.209">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#30c977"/>
+      <stop offset="0.281" stop-color="#36c788"/>
+      <stop offset="0.756" stop-color="#47c4b4"/>
+      <stop offset="1" stop-color="#49c4b7"/>
+    </linearGradient>
+  </defs>
+  <g id="background" transform="translate(46 -367)">
+    <image id="Rectangle_23" data-name="Rectangle 23" width="444.591" height="666.82" transform="translate(-46 367)" xlink:href="../../Pictures/beige-dome-building-2079666.jpg"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="362.54" height="667.048" transform="translate(-31.008 367.161)" opacity="0.66" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

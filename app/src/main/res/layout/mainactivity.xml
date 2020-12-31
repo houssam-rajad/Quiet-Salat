@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginTop="56.6dp"
+        android:layout_marginBottom="65dp"
+        >
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="14dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/location"
+            android:layout_height="20dp"
+            android:layout_gravity="center"></ImageView>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+
+        <TextView
+            android:id="@+id/currentlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLength="30"
+            android:text="location"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/darkgray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+        <ImageButton
+        android:layout_width="16dp"
+        android:id="@+id/location"
+        android:onClick="fetchData"
+        android:background="@drawable/refresh"
+        android:layout_height="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ic_settings"
+            android:onClick="customize"></ImageButton>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/subh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightGreen"
+            android:text="Subah الصبح"
+            android:textSize="21dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/Tsubh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/lightgray"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/subhswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/disabled"
+            android:onClick="switchBtnTapped"
+            ></ImageButton>
+
+    </LinearLayout>
+    <View
+        android:background="@color/lightgray"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="16dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/duhar"
+                android:text="Duhar الظهر"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGreen"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/Tduhar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/lightgray"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/duhr_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/disabled"
+            android:onClick="switchBtnTapped"/>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/lightgray"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="16dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/asr"
+                android:text="Asr العصر"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGreen"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/Tasr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/lightgray"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/asr_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/disabled"
+            android:onClick="switchBtnTapped"/>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/lightgray"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="16dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/maghrib"
+                android:text="Maghrib المغرب"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGreen"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/Tmaghrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/lightgray"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/maghrib_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/disabled"
+            android:onClick="switchBtnTapped"/>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/lightgray"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="16dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ishae"
+                android:text="Isha'a العشاء"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGreen"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/Tishae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/lightgray"
+                android:textSize="21dp"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/ishae_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/disabled"
+            android:onClick="switchBtnTapped"/>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/lightgray"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:alpha="0.5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="16dp"></View>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7478240568703787~3232755158">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</LinearLayout>
+
